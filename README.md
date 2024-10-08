@@ -1,10 +1,11 @@
 # vulnImageProcessor
- Basic Code Injection Vulnerable Image Processor developed to get experience on how rce work's via image uploading.
+ Basic Code Injection Vulnerable Image Processor developed to get experience on how rce work's via image uploading. 
+ 
 ![uponrunn](https://github.com/user-attachments/assets/f978afff-82bd-4b82-aa23-dc158dadfe42)
 
-After running `code.py`  you will get flag.txt and uploads in terminal ..  But remember our AIM .
+After running `code.py`  you will get flag.txt and uploads in terminal ..  But remember our AIM .  
 
-# Only Get Flag after uplaoding payload Embedded Image 
+# Goal is to  Get Flag after uploading payload Embedded Image and running `whoami` after connecting from nc
 
 
 
