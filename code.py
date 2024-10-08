@@ -46,7 +46,7 @@ def maybe_danger(metadata):
             else:
                 conn.sendall(b"Only 'whoami ' will work.")
 
-def upload_image():
+def upload_img():
     filename = input(
         "Enter the name of the image to upload: "
     ).strip()
@@ -70,7 +70,7 @@ def upload_image():
         print("No RTLO character. But You found Lollipop:)")
 
 
-def delete_image():
+def del_img():
     filename = input("Enter the name of the image to delete: ").strip()
     file_path = os.path.join(upload_folder, filename)
 
@@ -80,10 +80,9 @@ def delete_image():
     else:
         print(f"{filename} does not exist in the upload folder.")
 
-
 def main():
     print("\tVulnerable Image Uploader/Processor")
-    print("Please use RTLO method for image payload.")
+    print("  Please use RTLO method for image payload.")
     if not os.path.exists(upload_folder):
         os.makedirs(upload_folder)
 
@@ -96,9 +95,9 @@ def main():
         choice = input("Choose froma above : ").strip()
 
         if choice == "1":
-            upload_image()
+            upload_img()
         elif choice == "2":
-            delete_image()
+            del_img()
         elif choice == "3":
             print("bye")
             break
